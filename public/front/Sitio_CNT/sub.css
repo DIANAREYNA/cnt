@@ -1,0 +1,257 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background: url('fondo-textura.png') no-repeat center/cover;
+  color: #fff;
+}
+
+/* FUNCIONAMIENTO HEADER */
+
+    /* Barra de navegación */
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 1px solid #ddd;
+    }
+
+/* Ajustes de Logo */
+    .logo img {
+      font-weight: bold;
+      font-size: 18px;
+		width: 350px;
+		height: auto;
+		display: block;
+		
+    }
+
+    /* Menú principal */
+    .menu {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      position: relative;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      padding: 5px;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #008080; /* verde agua */
+    }
+
+    /* Submenús */
+    .submenu {
+      display: none;
+      position: absolute;
+      background: #fff;
+      list-style: none;
+      margin: 0;
+      padding: 10px 0;
+      top: 100%;
+      left: 0;
+      border: 1px solid #ddd;
+      min-width: 180px;
+      z-index: 1000;
+    }
+
+    .submenu li {
+      padding: 0;
+    }
+
+    .submenu a {
+      display: block;
+      padding: 8px 15px;
+      font-weight: normal;
+      color: #222;
+    }
+
+    .submenu a:hover {
+      color: #008080;
+    }
+
+    .menu li:hover > .submenu {
+      display: block;
+    }
+
+    /* Botón hamburguesa */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 4px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: #333;
+    }
+	
+
+    /* Menú móvil */
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        border-top: 1px solid #ddd;
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .menu li {
+        border-bottom: 1px solid #eee;
+      }
+
+      .menu li:hover > .submenu {
+        display: block;
+        position: static;
+        border: none;
+      }
+
+      .submenu {
+        padding-left: 20px;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+/* Idiomas */
+.lang-switch {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-switch a {
+  position: relative;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+/* Línea oculta inicialmente */
+.lang-switch a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #00A8AB;
+  transition: width 0.3s ease;
+}
+
+/* Al hacer hover */
+.lang-switch a:hover::after {
+  width: 100%;
+}
+
+/* Idioma activo (ejemplo ES seleccionado) */
+.lang-switch a.active {
+  color: #00A8AB;
+}
+
+.lang-switch a.active::after {
+  width: 100%;
+}
+
+/* FORMULARIO */
+.main-content {
+  text-align: center;
+  padding: 40px 20px;
+background: #2C2C2C;
+}
+
+.main-content h1 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+}
+
+.form-suscripcion {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.form-suscripcion label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form-suscripcion input,
+.form-suscripcion select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.doble {
+  display: flex;
+  gap: 30px;
+}
+
+/* casilla términos*/
+
+.terminos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+.terminos input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #00A8AB; /* color del check */
+  cursor: pointer;
+}
+
+.btn-enviar {
+  background: #00A8AB;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+a {
+  color: #ffffff;
+}
+
+a:visited {
+  color: #007bff; /* Morado */
+}

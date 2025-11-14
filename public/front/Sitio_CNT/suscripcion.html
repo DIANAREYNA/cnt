@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Suscripción | Compañía Nacional de Teatro</title>
+  <link rel="stylesheet" href="sub.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+<header class="header">
+  <nav>
+    <div class="logo"> 
+		<a href="home.html">
+		<img src="img/logo_black.png" alt="CNT Compañía Nacional de Teatro"  />
+		</a></div>
+	  
+<!-- Botón hamburguesa -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+	  
+<!-- Menú principal -->
+    <ul class="menu">
+      <li>
+        <a href="#">Cartelera</a>
+        <ul class="submenu">
+          <li><a href="#">Temporada</a></li>
+          <li><a href="#">Programación Completa</a></li>
+          <li><a href="#">Cómo adquirir boleto</a></li>
+          <li><a href="#">Repertorio</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">La compañía</a>
+        <ul class="submenu">
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">Elenco Estable</a></li>
+          <li><a href="#">Directorio</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Prensa</a></li>
+      <li class="lang-switch">
+		  
+  <a href="#" class="active">ES</a>
+  <a href="#">EN</a>
+</li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <h1>Formulario de Suscripción</h1>
+    <form class="form-suscripcion">
+      <label>Nombre*<input type="text" placeholder="Nombre" required></label>
+      <label>Apellidos<input type="text" placeholder="Apellidos"></label>
+      <label>Firma/Institución<input type="text" placeholder="Firma/Institución"></label>
+      <label>Correo electrónico*<input type="email" placeholder="Correo electrónico" required></label>
+      <div class="doble">
+        <label>Fecha de nacimiento*<input type="date" required></label>
+        <label>Género*
+          <select required>
+            <option value="">Seleccionar...</option>
+            <option>Mujer</option>
+            <option>Hombre</option>
+            <option>No binario</option>
+            <option>Prefiero no responder</option>
+          </select>
+        </label>
+      </div>
+      <label class="terminos">
+        <input type="checkbox" required> Acepto Términos y <a href="" class="politica">Política de Privacidad </a>
+      </label>
+      <button type="submit" class="btn-enviar">Registrarme</button>
+    </form>
+  </main>
+
+  
+  <script>
+  
+    function toggleMenu() {
+      document.querySelector(".menu").classList.toggle("active");
+    }
+	   const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    hamburger.classList.toggle("open");
+  });
+  </script>
+</body>
+</html>
