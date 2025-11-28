@@ -1,14 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@import url(".../estilo.css");
 
 /* RESET */
 
-    body {
+    html {
       margin: 0;
-      font-family: Arial, sans-serif;
-    }
+  background-image: url("../img/textura-fondo.jpg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+    
 
   
 
@@ -40,7 +43,7 @@
     }
 
     /* Menú principal */
-    .menu {
+    .menu {a
       display: flex;
       gap: 20px;
       list-style: none;
@@ -324,11 +327,10 @@
   :root{
     --accent:#00A8AB;
     --muted:#666;
-    --bg:#fff;
     --footer:#2b2b2b;
   }
   *{box-sizing:border-box}
-  html,body{height:100%;margin:0;font-family:Inter, "Helvetica Neue", Arial, sans-serif;color:var(--dark);background:var(--bg)}
+  html,body{height:100%;margin:0;font-family:Inter, "Helvetica Neue", Arial, sans-serif}
   a{color:inherit;text-decoration:none}
   img{max-width:100%;display:block;height:auto}
 
@@ -339,7 +341,7 @@
     position:sticky; top:0; z-index:60;
     background:#fff;border-bottom:1px solid #eee;
   }
-  .container{max-width:var(--max-width);margin:0 auto;padding:0 16px}
+  .container{max-width:var(--max-width);margin:0 auto;padding:0 }
   .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
   .logo img{height:44px}
   .nav-actions{display:flex;gap:18px;align-items:center}
@@ -353,7 +355,11 @@
   /* ===========================
      CAROUSEL
      =========================== */
-  .carousel{position:relative;overflow:hidden;background:#000}
+  .carousel{
+    position:relative;
+    overflow: hidden;
+   }
+
   .carousel .track{display:flex;transition:transform .6s ease;height:320px}
   .carousel .slide{min-width:100%;position:relative;color:#fff;display:flex;align-items:center;justify-content:center}
   .slide-content{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;padding:12px}
@@ -379,18 +385,17 @@
   /* ===========================
      STATS (Desde 1824 / +40 / +113)
      =========================== */
-  .stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;align-items:stretch;padding:28px 0}
-  .stat{background:#fff;padding:28px;text-align:center}
+  .stats{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:stretch}
+  .stat{;padding:28px;text-align:center}
   .stat h3{margin:0;font-size:28px;color:var(--accent)}
   .stat p{margin:8px 0 0;color:var(--muted)}
-  .stat.lead{background:linear-gradient(180deg,#fff,#fff);display:flex;flex-direction:column;justify-content:center}
+  .stat.lead{display:flex;flex-direction:column;justify-content:center}
   /* mobile layout: pleca for lead + two columns under */
   @media(max-width:900px){
     .stats{grid-template-columns:1fr;gap:12px}
-    .stat.lead{background:var(--accent);color:#fff;padding:20px;border-radius:4px}
-    .stat.lead h3{color:#fff;font-size:22px}
-    .two-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  }
+    .stat.lead{background:var(--accent);color:#fff;padding:20px}
+    .stat.lead h3{color:#fff;font-size:28px}
+     }
   @media(max-width:420px){ .two-cols{grid-template-columns:1fr} }
 
   /* ===========================
@@ -402,7 +407,7 @@
   /* ===========================
      ACTUALIDAD
      =========================== */
-  .actualidad{padding:28px 0}
+  .actualidad{padding:28px 30px}
   .news-list{display:grid;grid-template-columns:1fr 1fr;gap:18px}
   .news-item{display:flex;gap:12px;align-items:flex-start}
   .news-item img{width:120px;height:80px;object-fit:cover;border-radius:4px}
@@ -411,6 +416,137 @@
   @media(max-width:900px){ .news-list{grid-template-columns:1fr} .news-item img{width:90px;height:64px} }
 
 
-  /* footer */
+ /* -------------------- */
+/* FOOTER LAYOUT BASE   */
+/* -------------------- */
 
+.pleca {
+  width: 100%;
+  height: 20px;
+}
+
+/* Colores específicos */
+.pleca-azul {
+  background-color: #05AAAD;
+}
+
+.pleca-gris {
+  background-color: #67686C;
+}
+
+.footer {
+  position: relative;
+  color: #ffffff;
+  background-size: cover;
+  background: #2B2B2B;
+}
+
+
+/* CONTENEDOR */
+.footer-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 30px;
+}
+
+/* -------------------- */
+/* COLUMNA IZQUIERDA     */
+/* -------------------- */
+
+.footer-social{
+  gap: 10px;
+  list-style-type: none;
+}
+
+.footer-social .social img{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;+
   
+}
+
+.footer-social .social img:hover{
+  transform: scale(1.1);
+}
+
+/* -------------------- */
+/* COLUMNA DERECHA       */
+/* -------------------- */
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+}
+
+.footer-right .logos img {
+  height: 55px;
+  margin-left: 25px;
+}
+
+.volver {
+  color: #00A8AB;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.volver i {
+  font-size: 18px;
+}
+
+/* -------------------- */
+/* COPYRIGHT BOTTOM     */
+/* -------------------- */
+
+.footer-bottom {
+  position: relative;
+  background-color: #000;
+  z-index: 2;
+  text-align: center;
+  padding: 16px 10px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+/* ------------------------------------------- */
+/* RESPONSIVE - MÓVIL (según tu wireframe)     */
+/* ------------------------------------------- */
+
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  .footer-title {
+    font-size: 22px;
+  }
+
+  .footer-left p {
+    font-size: 16px;
+  }
+
+
+  .footer-right {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+
+  .footer-right .logos img {
+    height: 42px;
+  }
+
+  .volver {
+    font-size: 18px;
+  }
+}
