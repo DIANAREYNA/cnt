@@ -17,9 +17,10 @@ class Inicio extends BaseController {
             
     public function index()
     {
+        $datafut['js'] = ['inicio.js'];
         echo view('front/header');
         echo view('front/inicio');
-        echo view('front/footer');
+        echo view('front/footer', $datafut);
     }
 
 }
