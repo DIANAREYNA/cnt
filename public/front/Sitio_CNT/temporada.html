@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temporada CNT</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="estilo_01.css">
+  <link rel="stylesheet" href="estilo.css">
    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
  
 </head>
@@ -18,7 +18,7 @@
     <!-- Logo -->
     <div class="logo">
       <a href="home.html">
-        <img src="img/logo_black.png" alt="Logo CNT" />
+        <img src="img/logo_cnt.svg" alt="Logo CNT" />
       </a>
     </div>
 
@@ -38,7 +38,7 @@
           <span class="material-symbols-outlined">stat_minus_1</span>
         </a>
         <ul class="submenu">
-          <li><a href="#">Temporada</a></li>
+          <li><a href="temporada.html">Temporada</a></li>
           <li><a href="#">Programación Completa</a></li>
           <li><a href="#">Cómo adquirir boleto</a></li>
           <li><a href="#">Repertorio</a></li>
@@ -77,12 +77,12 @@
           <a href="suscripcion.html" class="subscribe-lines" target="_self">
             <hr>
             <div class="subscribe-content">
-              <img src="img/icono_correo.webp" class="icono.sub" alt="icono-suscripcion">
+              <img src="img/icono_correo.svg" class="icono.sub" alt="icono-suscripcion">
               <span>Suscríbete</span>
             </div>
             <hr>
           </a>
-          <p>Y recibe antes que nadie información sobre nuestras funciones, talleres y actividades.</p>
+          <p class="p-suscribete">Y recibe antes que nadie información sobre nuestras funciones, talleres y actividades.</p>
         </div>
       </li>
 
@@ -97,7 +97,7 @@
   <!-- SECCIÓN TEMPORADA -->
   <main class="temporada">
     <!-- Obra 1 -->
-    <a href="prueba_funcion..html"><section class="obra">
+    <a href="funcion.html"><section class="obra">
       <img src="img/banner_DRAMATURGOS POETAS 1 (2).jpg" alt="El Antipalomas" class="fondo">
       <div class="info-puestaenescena">
         <div class="bloque-fecha">
@@ -148,23 +148,226 @@
     </section></a>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p><strong>Compañía Nacional de Teatro</strong></p>
-    <p>Francisco Sosa #159, Coyoacán, CDMX</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-x-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
+ <footer class="footer">
+
+ 
+
+  <div class="footer-overlay"></div>
+
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h3 class="footer-title">COMPAÑÍA NACIONAL DE TEATRO</h3>
+      <br>
+      <p>Francisco Sosa #159</p>
+      <p>entre Melchor Ocampo y Encantada</p>
+      <p>04100, Coyoacán, CDMX.</p>
+      <p>Contacto: 55 8647 5620 / ext. 5600 cnt@inba.gob.mx</p>
+<br>
+
+      <div class="footer-social">
+        <li class="social">
+            <a href="https://www.facebook.com/cnteatro/" target="_blank"><img src="img/redes_FACE.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/cnteatromx/?hl=en" target="_blank"><img src="img/redes_INSTA.png" alt="Instagram"></a>
+            <a href="https://x.com/CNTeatromx" target="_blank"><img src="img/redes_X.png" alt="X"></a>
+            <a href="https://www.youtube.com/channel/UCCAyjVY8lz2vkM5XR-ciYDA" target="_blank"><img src="img/redes_YT.png" alt="YouTube"></a>
+            <a href="https://www.tiktok.com/@cnteatromx" target="_blank"><img src="img/redes_TIKTOK.png" alt="TikTok"></a>
+            <a href="https://www.threads.com/@cnteatromx" target="_blank"><img src="img/redes_TREADS.png" alt="Threads"></a>
+          </li>
+        
+        </div>
+
+        <span class="user"><strong>@CNTteatromx</strong></span>
+
     </div>
-    <p class="volver"><i class="fa-solid fa-arrow-up"></i> Volver arriba</p>
-  </footer>
+
+      <div class="logos">
+        <img src="img/logos_footer.png" alt="Cultura">
+      </div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    © Instituto Nacional de Bellas Artes y Literatura. México, 2025.
+  </div>
+</footer>
 
   <!-- JS inline -->
-  <script>
-    
-  </script>
+<!-- Este apartado se refiere al comportamiento con JavaScript--> 
+<script>
+/* ===============================
+   MENÚ RESPONSIVO CNT
+   =============================== */
+
+/* ---------- Selecciones ---------- */
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+const mobileExtra = document.querySelector('.mobile-extra');
+const subscribeBlock = document.querySelector('.subscribe-block');
+const footerMobile = document.querySelector('.footer-mobile');
+const itemsWithSub = document.querySelectorAll('.menu > .has-sub');
+
+/* ---------- Función abrir/cerrar menú ---------- */
+function toggleMenu() {
+  const isOpen = menu.classList.toggle('active');
+  hamburger.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', String(isOpen));
+
+  // Mostrar/ocultar bloques móviles
+  const displayState = isOpen ? 'block' : 'none';
+
+  if (mobileExtra) mobileExtra.style.display = displayState;
+  if (subscribeBlock) subscribeBlock.style.display = displayState;
+  if (footerMobile) footerMobile.style.display = displayState;
+}
+
+hamburger.addEventListener('click', toggleMenu);
+
+/* ---------- Desktop: hover cambia icono ---------- */
+itemsWithSub.forEach(item => {
+  const icon = item.querySelector('.menu-link i');
+  const submenu = item.querySelector('.submenu');
+
+  // Hover (solo desktop)
+  item.addEventListener('mouseenter', () => {
+    if (window.innerWidth > 768 && icon) {
+      icon.classList.remove('fa-arrow-up-right');
+      icon.classList.add('fa-arrow-down-right');
+    }
+  });
+
+  item.addEventListener('mouseleave', () => {
+    if (window.innerWidth > 768 && icon) {
+      icon.classList.remove('fa-arrow-down-right');
+      icon.classList.add('fa-arrow-up-right');
+    }
+  });
+
+  /* ---------- Mobile: click para abrir submenú ---------- */
+  const link = item.querySelector('.menu-link');
+  if (link) {
+    link.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        submenu.classList.toggle('active');
+        icon.classList.toggle('fa-arrow-up-right');
+        icon.classList.toggle('fa-arrow-down-right');
+      }
+    });
+  }
+});
+
+/* ---------- Al cambiar tamaño de ventana ---------- */
+window.addEventListener('resize', () => {
+  // Si pasamos a desktop, resetea el menú móvil
+  if (window.innerWidth > 768) {
+    menu.classList.remove('active');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+
+    // Ocultar bloques móviles
+    if (mobileExtra) mobileExtra.style.display = 'none';
+    if (subscribeBlock) subscribeBlock.style.display = 'none';
+    if (footerMobile) footerMobile.style.display = 'none';
+
+    // Restablecer íconos
+    itemsWithSub.forEach(item => {
+      const icon = item.querySelector('.menu-link i');
+      const submenu = item.querySelector('.submenu');
+      if (icon) {
+        icon.classList.remove('fa-arrow-down-right');
+        icon.classList.add('fa-arrow-up-right');
+      }
+      if (submenu) submenu.classList.remove('active');
+    });
+  }
+});
+
+/* ---------- Aquí inicia el Javascript para el contenido de la página ---------- */
+// ---------- CAROUSEL (vanilla JS) ----------
+  (function(){
+    const track = document.getElementById('carouselTrack');
+    const slides = Array.from(track.children);
+    const dotsContainer = document.getElementById('carouselDots');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let index = 0;
+    let autoplayTimer = null;
+    const slideCount = slides.length;
+
+    // create dots
+    slides.forEach((s,i)=>{
+      const d = document.createElement('button');
+      d.className = 'dot' + (i===0? ' active':'');
+      d.setAttribute('aria-label','Ir al slide ' + (i+1));
+      d.addEventListener('click',()=>goTo(i));
+      dotsContainer.appendChild(d);
+    });
+
+    function update(){
+      track.style.transform = 'translateX(' + (-index*100) + '%)';
+      // dots
+      Array.from(dotsContainer.children).forEach((d, i)=> d.classList.toggle('active', i===index));
+    }
+    function goTo(i){
+      index = (i+slideCount)%slideCount;
+      update();
+      resetAutoplay();
+    }
+    prevBtn.addEventListener('click', ()=> goTo(index-1));
+    nextBtn.addEventListener('click', ()=> goTo(index+1));
+
+    function startAutoplay(){
+      autoplayTimer = setInterval(()=> goTo(index+1), 5000);
+    }
+    function resetAutoplay(){ clearInterval(autoplayTimer); startAutoplay(); }
+
+    // init
+    update();
+    startAutoplay();
+    // pause on hover (desktop)
+    track.addEventListener('mouseenter', ()=> clearInterval(autoplayTimer));
+    track.addEventListener('mouseleave', ()=> startAutoplay());
+  })();
+
+  // ---------- Responsive tweak for stats: move two stats to .two-cols on mobile ----------
+  (function(){
+    const twoCols = document.querySelector('.two-cols');
+    const stats = document.querySelector('.stats');
+    if(!twoCols || !stats) return;
+    const statItems = Array.from(stats.querySelectorAll('.stat'));
+    function rearrange(){
+      if(window.innerWidth <= 900){
+        // leave lead as first, put the other two inside two-cols container
+        twoCols.style.display = 'grid';
+        twoCols.style.gridTemplateColumns = '1fr 1fr';
+        // take stats[1] and stats[2] content into twoCols
+        twoCols.innerHTML = '';
+        twoCols.appendChild(statItems[1].cloneNode(true));
+        twoCols.appendChild(statItems[2].cloneNode(true));
+        // ensure lead shows full width (already in stats)
+      } else {
+        twoCols.style.display = 'none';
+      }
+    }
+    window.addEventListener('resize', rearrange);
+    rearrange();
+  })();
+
+  // ---------- SIMPLE: open mobile menu (if you have a mobile nav) ----------
+  (function(){
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu'); // if you integrate one
+    if(!hamburger) return;
+    hamburger.addEventListener('click', ()=>{
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      // if you have a mobile menu element, toggle it here:
+      if(mobileMenu) mobileMenu.classList.toggle('active');
+    });
+  })();
+</script>
 
 </body>
 </html>

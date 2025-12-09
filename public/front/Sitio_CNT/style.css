@@ -1,0 +1,135 @@
+/* ==== GLOBAL ==== */
+
+body {
+    margin: 0  100px 0 100px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0 0 5px;
+  color: white;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 0 0 25px;
+  color: #e8f6f7;
+  font-size: 14px;
+}
+
+.input {
+  width: 93%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 12px;
+}
+
+.forgot {
+  font-size: 13px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #E83F8B;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+
+}
+
+.create {
+  color: white;
+  font-size: 14px;
+}
+
+
+/* ==== MOBILE MODAL ==== */
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.mobile-card {
+  background-color: #00A8AB;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Hide desktop on mobile */
+.desktop-container {
+  display: none;
+}
+
+
+
+/* ==== DESKTOP RESPONSIVE ==== */
+
+@media (min-width: 900px) {
+
+  /* Hide mobile modal */
+  .overlay {
+    display: none;
+  }
+
+  .desktop-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+
+  .desktop-card {
+    display: flex;
+    background-color: #00A8AB;
+    width: 90%;
+    max-width: 1300px;
+    border-radius: 12px;
+    padding: 100px;
+    justify-content: space-between;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .right-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+   
+  }
+
+  .btn {
+    width: 150px;
+    align-self: flex-end; 
+    
+  }
+  .create {
+    margin-right: auto; /* 🔥 empuja "Crear cuenta" a la izquierda */
+  }
+ 
+}

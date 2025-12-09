@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../INBAL_CNT_WEB/Sitio_CNT/pruebacopy.css">
+  <title>Check-out Entradas</title>
+	<link rel="stylesheet" href="../../INBAL_CNT_WEB/Sitio_CNT/estilo.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
- <link rel="icon" class="pestaña" href="img/prueba_cambiar.png" type="logo CNT">
-  <title>Compañía Nacional de Teatro</title>
+ <link rel="icon" class="pestaña"  width="50px" href="img/logo_cnt_webpage.svg" type="logo CNT">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+ <title>Compañía Nacional de Teatro</title>
 </head>
-	
+
+
 <body>
 
 <header class="header">
@@ -17,7 +23,7 @@
     <!-- Logo -->
     <div class="logo">
       <a href="home.html">
-        <img src="img/logo_black.png" alt="Logo CNT" />
+        <img src="img/logo_cnt.svg" alt="Logo CNT" />
       </a>
     </div>
 
@@ -37,7 +43,7 @@
           <span class="material-symbols-outlined">stat_minus_1</span>
         </a>
         <ul class="submenu">
-          <li><a href="#">Temporada</a></li>
+          <li><a href="temporada.html">Temporada</a></li>
           <li><a href="#">Programación Completa</a></li>
           <li><a href="#">Cómo adquirir boleto</a></li>
           <li><a href="#">Repertorio</a></li>
@@ -76,12 +82,12 @@
           <a href="suscripcion.html" class="subscribe-lines" target="_self">
             <hr>
             <div class="subscribe-content">
-              <img src="img/icono_correo.webp" class="icono.sub" alt="icono-suscripcion">
+              <img src="img/icono_correo.svg" class="icono.sub" alt="icono-suscripcion">
               <span>Suscríbete</span>
             </div>
             <hr>
           </a>
-          <p>Y recibe antes que nadie información sobre nuestras funciones, talleres y actividades.</p>
+          <p class="p-suscribete">Y recibe antes que nadie información sobre nuestras funciones, talleres y actividades.</p>
         </div>
       </li>
 
@@ -91,71 +97,112 @@
     </ul>
       
   </nav>
-<main class="temporada">
-    <!-- Obra 1 -->
-    <section class="obra">
-      <img src="img/banner_DRAMATURGOS POETAS 1 (2).jpg" alt="El Antipalomas" class="fondo">
-      <div class="info-puestaenescena">
-        <div class="bloque-fecha">
-          <p class="fecha-mes">Del <strong>18</strong> Ene</p>
-          <p class="fecha-mes">al <strong>16</strong> Feb</p>
-        </div>
-        <div class="bloque-info">
-          <p class="detalle">Sáb y Dom / 12:30 h / Teatro del Bosque</p>
-          <h2 class="titulo-obra">EL ANTIPALOMAS</h2>
-          <p class="detalle">65 min / 7+ / $80</p>
-          <hr class="linea">
-        </div>
-      </div>
-    </section>
+</header>
+<!-- PORTADA -->
+<img src="img/banner_DRAMATURGOS POETAS 1 (2).jpg" alt="El Antipalomas" class="fondo">
 
-    <!-- Obra 2 -->
-    <section class="obra">
-      <img src="img/banner_DRAMATURGOS POETAS 2 (2).jpg" alt="La niña en el altar" class="fondo">
-      <div class="info-puestaenescena">
-        <div class="bloque-fecha">
-          <p class="fecha-mes">Del <strong>30</strong> Ene</p>
-          <p class="fecha-mes">al <strong>02</strong> Mar</p>
-        </div>
-        <div class="bloque-info">
-          <p class="detalle">Jue, Vie, Sáb 19 h / Dom 18 h / Teatro el Galeón</p>
-          <h2 class="titulo-obra">LA NIÑA EN EL ALTAR</h2>
-          <p class="detalle">140 min / 15+ / $150</p>
-          <hr class="linea">
-        </div>
-      </div>
-    </section>
+  <div class="title-bar">EL ANTIPALOMAS</div>
 
-    <!-- Obra 3 -->
-    <section class="obra">
-      <img src="img/banner_ENSAYO MÁS VALE MORIR 1.jpg" alt="Cada quien a su manera" class="fondo">
-      <div class="info-puestaenescena">
-        <div class="bloque-fecha">
-          <p class="fecha-mes">Del <strong>18</strong> Ene</p>
-          <p class="fecha-mes">al <strong>16</strong> Feb</p>
-        </div>
-        <div class="bloque-info">
-          <p class="detalle">Jue, Vie, Sáb 19 h / Dom 18 h / Teatro del Bosque</p>
-          <h2 class="titulo-obra">CADA QUIEN A SU MANERA</h2>
-          <p class="detalle">120 min / 12+ / $150</p>
-          <hr class="linea">
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p><strong>Compañía Nacional de Teatro</strong></p>
-    <p>Francisco Sosa #159, Coyoacán, CDMX</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-x-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
+  <div class="summary content">
+    <h3>NOMBRE, ÉSTE ES TU RESUMEN DEL EVENTO</h3>
+ <!-- LÍNEA DIVISORIA -->
+    <hr style="border:0; border-bottom:2px solid #000000; margin:18px 0;">
+    <!-- PRIMERA LÍNEA -->
+    <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:15px; font-size:1rem;">
+      <span class="material-symbols-outlined">person</span>person</span> +15
+      <span class="material-symbols-outlined">schedule</span> 140 min
+      <span class="material-symbols-outlined">calendar_today</span> Del 30/Ene al 02/Mar
+      <span class="material-symbols-outlined">confirmation_number</span> Entrada Libre
     </div>
-    <p class="volver"><i class="fa-solid fa-arrow-up"></i> Volver arriba</p>
-  </footer>
+
+   
+
+    <!-- SEGUNDA LÍNEA -->
+    <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap; font-size:1rem;">
+      <span class="material-symbols-outlined">location_on</span>
+      <a href="https://maps.google.com" target="_blank">Teatro El Galeón, Abraham Oceransky</a>
+      <span class="material-symbols-outlined">description</span>
+      <a href="#" target="_blank">Programa de mano (PDF)</a>
+    </div>
+     <!-- LÍNEA DIVISORIA -->
+    <hr style="border:0; border-bottom:2px solid #000000; margin:18px 0;">
+<br>
+<p>Selecciona fecha y horario para asistir a la función:</p>
+    <div class="selectors">
+        
+      <input type="date" id="fecha">
+      <select id="hora">
+        <option disabled selected>Selecciona hora</option>
+        <option>1:00 pm</option>
+        <option>4:00 pm</option>
+        <option>7:00 pm</option>
+      </select>
+    </div>
+
+    <div class="ticket-bar">
+      <strong>Total de entradas</strong>
+      <div class="counter">
+        <button id="minus">-</button>
+        <span id="count">1</span>
+        <button id="plus">+</button>
+      </div>
+    </div>
+
+    <div class="check">
+      <input type="checkbox" id="acepto">
+      <label for="acepto">Recibiré un correo electrónico con mis entradas y detalles de la visita. Las entradas son digitales y deben mostrarse en el acceso al teatro. Es necesario llegar 30 minutos antes para un acceso sin contratiempos.</label>
+    </div>
+<a href="confirmacion.html"> 
+    <div class="btn-confirm">Confirmar</div>
+    </a>
+
+  </div>
+</div>
+
+
+<footer class="footer">
+
+ 
+
+  <div class="footer-overlay"></div>
+
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h3 class="footer-title">COMPAÑÍA NACIONAL DE TEATRO</h3>
+      <br>
+      <p>Francisco Sosa #159</p>
+      <p>entre Melchor Ocampo y Encantada</p>
+      <p>04100, Coyoacán, CDMX.</p>
+      <p>Contacto: 55 8647 5620 / ext. 5600 cnt@inba.gob.mx</p>
+<br>
+      <div class="footer-social">
+        <li class="social">
+            <a href="https://www.facebook.com/cnteatro/" target="_blank"><img src="img/redes_FACE.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/cnteatromx/?hl=en" target="_blank"><img src="img/redes_INSTA.png" alt="Instagram"></a>
+            <a href="https://x.com/CNTeatromx" target="_blank"><img src="img/redes_X.png" alt="X"></a>
+            <a href="https://www.youtube.com/channel/UCCAyjVY8lz2vkM5XR-ciYDA" target="_blank"><img src="img/redes_YT.png" alt="YouTube"></a>
+            <a href="https://www.tiktok.com/@cnteatromx" target="_blank"><img src="img/redes_TIKTOK.png" alt="TikTok"></a>
+            <a href="https://www.threads.com/@cnteatromx" target="_blank"><img src="img/redes_TREADS.png" alt="Threads"></a>
+          </li>
+        
+        </div>
+
+        <span class="user"><strong>@CNTteatromx</strong></span>
+
+    </div>
+
+      <div class="logos">
+        <img src="img/logos_footer.png" alt="Cultura">
+      </div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    © Instituto Nacional de Bellas Artes y Literatura. México, 2025.
+  </div>
+</footer>
 
 
 
@@ -332,10 +379,16 @@ window.addEventListener('resize', () => {
       if(mobileMenu) mobileMenu.classList.toggle('active');
     });
   })();
-  // ---------- AGREGADO PARA LA PAGINA DE TEMPORADA ----------
-  const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav');
-    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+
+
+  const plus = document.getElementById('plus');
+  const minus = document.getElementById('minus');
+  const count = document.getElementById('count');
+  let value = 1;
+
+  plus.onclick = ()=>{ if(value < 4){ value++; count.textContent=value; }}
+  minus.onclick = ()=>{ if(value > 1){ value--; count.textContent=value; }}
+
 </script>
 
 </body>
