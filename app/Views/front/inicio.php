@@ -36,37 +36,42 @@
         </div>
     </section>
 
-    <!-- on mobile we want the two stats below the lead in two columns -->
-    <div class="two-cols container" style="display:none"></div>
-
     <!-- YOUTUBE VIDEO -->
     <section style="margin:20px 0">
-        <div class="video-wrap" aria-hidden="false" title="Video CNT">
+      <div class="video-wrap" aria-hidden="false" title="Video CNT">
         <!-- replace VIDEO_ID with your YouTube id -->
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DgY8N_tLa8Y?si=cjzgVEt3LWl7nlbS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     </section>
 
     <!-- ACTUALIDAD -->
     <section class="actualidad">
-        <h2 style="margin:0 0 12px;font-size:22px">ACTUALIDAD</h2>
+        
+      
+        <h2 class="h2-actualidad" style="margin:0 0 12px;font-size:28px; color: #B3B3B3;">ACTUALIDAD</h2>
+        
         <div class="news-list">
-        <article class="news-item">
-            <img src="<?=base_url('img/banners/banner_ENSAYOMASVALEMORIR2.jpg');?>" alt="">
-            <div>
-                <h4>Construyendo un rinoceronte, exposición en el Teatro El Galeón</h4>
-                <p>¿Qué hay detrás de cada propuesta escenográfica? ¿Cuántos creadores trabajan arduamente en cada libreto que se lleva al escenario?</p>
-            </div>
-        </article>
-
-        <article class="news-item">
-            <img src="<?=base_url('img/banners/banner_TEQUILAYCANCION2.JPG');?>" alt="">
-            <div>
-                <h4>Monólogo con un par de alas en la obra Instrucciones para volar</h4>
-                <p>Una mujer, habitante de un país caluroso, actriz desempleada, ...</p>
-            </div>
-        </article>
-        </div>
+            <a href="https://inba.gob.mx/prensa/21623/construyendo-un-rinoceronte-exposicioninstalacion-en-el-teatro-el-galeon"> 
+                <article class="news-item">
+            
+                <img src="<?=base_url('img/banners/banner_ENSAYOMASVALEMORIR2.jpg');?>" alt="">
+                <div>
+                    <h4>Construyendo un rinoceronte, exposición en el Teatro El Galeón</h4>
+                    <p>¿Qué hay detrás de cada propuesta escenográfica? ¿Cuántos creadores trabajan arduamente en cada libreto que se lleva al escenario?</p>
+                </div>
+            
+                </article>
+            </a>
+            <a href="https://inba.gob.mx/prensa/21614/monologo-con-un-par-de-alas-en-la-obra-instrucciones-para-volar-con-la-interpretacion-de-karina-gidi">
+                <article class="news-item">
+                    <img src="<?=base_url('img/banners/banner_TEQUILAYCANCION2.JPG');?>" alt="">
+                    <div>
+                        <h4>Monólogo con un par de alas en la obra Instrucciones para volar</h4>
+                        <p>Una mujer, habitante de un país caluroso, actriz desempleada, ...</p>
+                    </div>
+                </article>
+            </a>
+      </div>
     </section>
 
 </main>

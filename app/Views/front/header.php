@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="<?=base_url('css/estilo.css');?>">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
-  <link rel="icon" class="pestaña" href="<?=base_url('img/prueba_cambiar.png');?>" type="logo CNT">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" class="pestaña" href="<?=base_url('img/logo_cnt_webpage.svg');?>" type="logo CNT">
   <title>Compañía Nacional de Teatro</title>
 
   <?php
@@ -35,7 +37,7 @@
     <!-- Logo -->
     <div class="logo">
       <a href="<?=base_url();?>">
-        <img src="<?=base_url('img/logo_black.png');?>" alt="Logo CNT" />
+        <img src="<?=base_url('img/logo_cnt.svg');?>" alt="Logo CNT" />
       </a>
     </div>
 
