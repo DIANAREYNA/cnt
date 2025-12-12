@@ -156,9 +156,9 @@ color:#fff;
   background: none;
   border: none;
   color: var(--white);
-  font-size: 36px;
+  font-size: 28px;
   text-align: left;
-  padding: 15px 0;
+  padding: 10px 0;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -235,7 +235,8 @@ color:#fff;
   }
 
   .pleca-item {
-    font-size: 32px;
+    font-size: 20px;
+    text-transform: uppercase;
   }
 
 }
@@ -259,4 +260,30 @@ color:#fff;
     text-align: center;
     white-space: normal;
   }
+}
+.btn-wrapper {
+width: 100%;
+padding: 20px;
+display: flex;
+justify-content: center; /* Móvil: botón centrado */
+}
+
+.btn{
+background-color: #00A8AB;
+color: white !important;
+padding: 12px 30px;
+border-radius: 6px;
+text-decoration: none;
+display: inline-block;
+text-align: center;
+font-size: 14px;
+border: none;
+cursor: pointer;
+}
+
+@media(min-width: 768px){
+.btn-wrapper {
+justify-content: flex-end;
+padding-right: 40px;
+}
 }
