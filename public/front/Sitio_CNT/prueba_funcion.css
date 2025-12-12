@@ -65,7 +65,7 @@
 }
 
 .pleca h3 {
-  font-size: 32px;
+  font-size: 16px;
   line-height: 1.1;
 }
 
@@ -73,7 +73,9 @@
    SINOPSIS
 ----------------------------------------- */
 .sinopsis {
+
   padding: 30px 30px;
+  
 }
 
 .sinopsis h2 {
@@ -107,7 +109,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -156,9 +158,9 @@ color:#fff;
   background: none;
   border: none;
   color: var(--white);
-  font-size: 28px;
+  font-size: 24px;
   text-align: left;
-  padding: 10px 0;
+  padding: 5px 0;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -251,34 +253,44 @@ color:#fff;
   }
 
   .pleca-contenedor {
-    grid-template-columns: 1fr;
+   
     gap: 8px;
   }
 
   .pleca-item {
+    margin: 20px;
     font-size: 20px;
-    text-align: center;
+  
     white-space: normal;
+    text-transform: uppercase;
   }
 }
 .btn-wrapper {
 width: 100%;
 padding: 20px;
-display: flex;
+display: inline-flex;
 justify-content: center; /* Móvil: botón centrado */
 }
 
 .btn{
 background-color: #00A8AB;
 color: white !important;
-padding: 12px 30px;
+padding: 12px 60px;
+margin: 12px 0;
 border-radius: 6px;
 text-decoration: none;
-display: inline-block;
+align-items: center;
+display: inline-flex;  
+justify-content: center;
 text-align: center;
-font-size: 14px;
+font-size: 20px;
 border: none;
 cursor: pointer;
+}
+
+.botonentrada{
+display: flex;
+justify-content: center;
 }
 
 @media(min-width: 768px){
