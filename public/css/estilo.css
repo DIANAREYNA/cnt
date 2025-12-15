@@ -7,13 +7,24 @@
 
     html {
       margin: 0;
-  background-image: url("../img/textura-fondo.jpg"); !important;
+  background-image: url("../img/textura-fondo.jpg") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: 120% auto;
 }
     
+/* ======== RESET ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin: 0;
+}
 
   
 
@@ -587,17 +598,6 @@ nav{
 /* PAGINA TEMPORADA     */
 /* ------------------------------------------- */
 
-/* ======== RESET ======== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  margin: 0;
-}
 
 
 /* ======== SECCIÓN TEMPORADA ======== */
@@ -704,8 +704,7 @@ body {
       --dark:#222;
       --light:#fafafa;
     }
-    body { margin: 0; font-family: "Inter", sans-serif; background: var(--light); color: var(--dark);}    
-
+   
     /* HEADER IMAGE */
 
 
@@ -795,3 +794,19 @@ body {
       font-weight:bold;
     }
 
+.contact-overlay {
+  width: 100%;
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-grid {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

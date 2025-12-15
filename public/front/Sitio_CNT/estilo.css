@@ -15,7 +15,18 @@
 }
     
 
-  
+  /* ======== RESET ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  margin: 0;
+}
+
 
 
 /* FUNCIONAMIENTO HEADER */
@@ -593,11 +604,7 @@ nav{
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  margin: 0;
-}
+
 
 
 /* ======== SECCIÓN TEMPORADA ======== */
@@ -704,8 +711,7 @@ body {
       --dark:#222;
       --light:#fafafa;
     }
-    body { margin: 0; font-family: "Inter", sans-serif; background: var(--light); color: var(--dark);}    
-
+ 
     /* HEADER IMAGE */
 
 
@@ -794,4 +800,77 @@ body {
       cursor:pointer;
       font-weight:bold;
     }
+ /* ------------------------------------------- */
+/* CONTACTO – limpio y sin conflictos          */
+/* ------------------------------------------- */
 
+.contact-overlay {
+  background: rgba(255, 255, 255, 0.9);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Título */
+.contact-title {
+  text-align: center;
+  color: #00A8AB;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Línea bajo CONTACTO */
+.contact-divider {
+  width: 120px;
+  height: 3px;
+  background-color: #00A8AB;
+  margin: 0 auto 50px auto;
+}
+
+/* CONTENEDOR CENTRAL */
+.contact-container {
+  display: flex;
+  justify-content: center; /* 🔑 */
+}
+
+/* GRID */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px 60px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto; /* 🔑 */
+}
+
+/* TARJETA */
+.contact-card {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+/* TEXTO */
+.contact-role {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+.contact-name {
+  color: #00A8AB;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contact-ext,
+.contact-email {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
