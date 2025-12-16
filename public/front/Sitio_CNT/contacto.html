@@ -1,180 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Contacto</title>
+
   <style>
+   
+@import url('https://fonts.googleapis.com/css2?family=Geologica:slnt,wght,CRSV,SHRP@-12..0,100..900,0..1,0..100&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+   
+
     body {
+      background-image: url('img/textura-fondo.jpg'); 
+      background-repeat: no-repeat; 
+      background-size: cover; 
+      background-attachment: fixed;  
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('FOTO-DE-FONDO.jpg'); /* Reemplaza por tu imagen */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
     }
 
-    .overlay {
-      background: rgba(255, 255, 255, 0.9);
-      min-height: 100vh;
-      padding: 20px;
+    .contacto {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
 
-    h1 {
+    .contacto h1 {
       text-align: center;
       color: #00A8AB;
-      font-size: 32px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      font-size: 96px;
     }
 
-    .contact-list {
+    .contacto-grid {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 30px 60px;
-      max-width: 900px;
-      margin: 0 auto; /* CENTRADO REAL */
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
     }
 
-    .item {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 15px;
+    /* Columna izquierda */
+    .col.izquierda {
+      text-align: right;
     }
 
-    .role {
-      font-weight: bold;
-      color: #000;
-      font-size: 16px;
-    }
-
-    .name {
-      color: #00A8AB;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    .ext, .email {
-      display: block;
+    .col.izquierda p {
+      margin-bottom: 16px;
       font-size: 14px;
-      color: #333;
+      line-height: 1.4;
     }
 
-    /* DIVIDER */
-    .divider {
-  
-      height: 3px;
-       border-bottom: 1px solid #ccc;
+    .col.izquierda strong {
+      font-weight: 600;
+    }
+
+    /* Columna derecha */
+    .col.derecha {
+      text-align: left;
+    }
+
+    .col.derecha p {
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .col.derecha span {
+      color: #00A8AB;
+      font-weight: 600;
+    }
+
+    /* Línea horizontal*/
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #00A8AB;
+
+  margin: 20px 10% 40px 10%;
+}
+    /* Responsive */
    
-      margin: 0 auto 20px auto; /* CENTRADA */
+  @media (max-width: 768px) {
+      .contacto h1 {
+      text-align: center;
+      color: #00A8AB;
+      margin-bottom: 20px;
+      font-size: 40px;
     }
-
-    /* DESKTOP *//
-    @media (min-width: 900px) {
-      h1 {
-        font-size: 40px;
-      }
-
-      .contact-list {
-        grid-template-columns: 1fr 1fr; /* DOS COLUMNAS */
-      }
-    }
-
-      .contact-list {
-        max-width: 450px;
-      }
-
-      h1 {
-        font-size: 40px;
-      }
-    }
+  }
   </style>
 </head>
+
 <body>
-  <div class="overlay">
 
-    <h1>CONTACTO</h1>
+<section class="contacto">
+  <h1>CONTACTO</h1>
+<hr class="divider">
+  <div class="contacto-grid">
 
-    <div class="divider"></div>
+    <!-- Columna izquierda -->
+    <div class="col izquierda">
+      <p><strong>Dirección Artística</strong><br>ext. 5599</p>
+      <p><strong>Enlace de la Dirección Artística</strong><br>ext. 5590</p>
+      <p><strong>Dramaturgista</strong><br>ext. 5597</p>
+      <p><strong>Subdirección de Producción</strong><br>ext. 5595</p>
+      <p><strong>Enlace con los Estados y Giras</strong><br>ext. 5597</p>
+      <p><strong>Subdirección de Planeación y Programación</strong><br>ext. 5593</p>
+      <p><strong>Dirección Técnica</strong><br>ext. 5596</p>
+      <p><strong>Administración</strong><br>ext. 5594</p>
+      <p><strong>Gerente de Elenco</strong><br>ext. 5602</p>
+      <p><strong>Subdirección de Difusión y Comunicación</strong><br>ext. 5591</p>
+      <p><strong>Prensa</strong><br>ext. 5591</p>
+      <p><strong>Organización de Públicos</strong><br>ext. 5605</p>
+      <p><strong>Vigilancia</strong><br>ext. 5605</p>
+    </div>
 
-    <div class="contact-container">
-
-      <div class="contact-list two-columns">
-
-        <div class="item">
-          <span class="role">Dirección Artística</span><br>
-          <span class="name">Aurora Cano</span>
-          <span class="ext">ext. 5599</span>
-          <span class="email">acano@inba.gob.mx</span>
-        </div>
-
-        <div class="item">
-          <span class="role">Enlace de la Dirección Artística</span><br>
-          <span class="name">Blanca Huerta</span>
-          <span class="ext">ext. 5590</span>
-          <span class="email">mafafa16@hotmail.com</span>
-        </div>
-
-        <div class="item">
-          <span class="role">Dramaturgista</span><br>
-          <span class="name">Simón Franco</span>
-          <span class="ext">ext. 5597</span>
-          <span class="email">dramaturgismocnt@gmail.com</span>
-        </div>
-
-        <div class="item">
-          <span class="role">Subdirección de Producción</span><br>
-          <span class="name">Raúl Munguía</span>
-          <span class="ext">ext. 5595</span>
-          <span class="email">rmunguia@inba.gob.mx</span>
-        </div>
-
-        <div class="item">
-          <span class="role">Enlace con los Estados y Giras</span><br>
-          <span class="name">Luis Rivera</span>
-          <span class="ext">ext. 5597</span>
-          <span class="email">girascntteatro@gmail.com</span>
-        </div>
-
-        <div class="item">
-          <span class="role">Subdirección de Planeación y Programación</span><br>
-          <span class="name">Mónica Juárez</span>
-          <span class="ext">ext. 5593</span>
-          <span class="email">infocnteatro@inba.gob.mx</span>
-        </div>
-
-        <div class="item">
-          <span class="role">Dirección Técnica</span><br>
-          <span class="name">Alejandro Carrasco Bergara</span>
-          <span class="ext">ext. 5596</span>
-          <span class="email">alejandrocarrascobergara@gmail.com</span>
-        </div>
-
-        <div class="item">
-          <span class="role">Administración</span><br>
-          <span class="name">Osana Sandoval</span>
-          <span class="ext">ext. 5594</span>
-          <span class="email">osandoval@inba.gob.mx</span>
-        </div>
-
-        <div class="item">
-          <span class="role">Gerente de Elenco</span><br>
-          <span class="name">Laura Perea</span>
-          <span class="ext">ext. 5602</span>
-          <span class="email">gelenocnt@gmail.com</span>
-        </div>
-
-        <div class="item">
-          <span class="role">Subdirección de Difusión y Comunicación</span><br>
-          <span class="name">Rocío Ramonettti</span>
-          <span class="ext">ext. 5591</span>
-          <span class="email">cnteatro.difusion@inba.gob.mx</span>
-        </div>
-
-      </div>
+    <!-- Columna derecha -->
+    <div class="col derecha">
+      <p><span>Aurora Cano</span><br>acano@inba.gob.mx</p>
+      <p><span>Blanca Huerta</span><br>mafafa16@hotmail.com</p>
+      <p><span>Simón Franco</span><br>dramaturgismocnt@gmail.com</p>
+      <p><span>Raúl Munguía</span><br>rmunguia@inba.gob.mx</p>
+      <p><span>Luis Rivera</span><br>girasctnteatro@gmail.com</p>
+      <p><span>Mónica Juárez</span><br>infocnteatro@inba.gob.mx</p>
+      <p><span>Alejandro Carrasco Bergara</span><br>alejandrocarrascobergara@gmail.com</p>
+      <p><span>Osana Sandoval</span><br>osandoval@inba.gob.mx</p>
+      <p><span>Laura Perea</span><br>gelencocnt@gmail.com</p>
+      <p><span>Rocío Ramonettti</span><br>cnteatro.difusion@inba.gob.mx</p>
+      <p><span>Corina Rojas Caudillo</span><br>corinarojas@gmail.com</p>
+      <p><span>Fernanda Fierro</span><br>publicos.cnteatro@inba.gob.mx</p>
     </div>
 
   </div>
-    </div>
+</section>
 
-  </div>
 </body>
 </html>

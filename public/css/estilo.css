@@ -22,7 +22,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+
   margin: 0;
 }
 
@@ -42,7 +42,7 @@ body {
   }
     /* Barra de navegación */
     nav {
-      background: #fff;
+   
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -166,7 +166,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.867);
+
   z-index: -1;
 }
 
