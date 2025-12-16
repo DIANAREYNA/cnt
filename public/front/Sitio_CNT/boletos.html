@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
+ <link rel="icon" class="pestaña"  width="50px" href="img/logo_cnt_webpage.svg" type="logo CNT">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+ <title>Compañía Nacional de Teatro</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Raleway:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-image: url('img/textura-fondo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* CONTENEDOR */
+.boletos {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* TÍTULO */
+.boletos h1 {
+  text-align: center;
+  color: #00A8AB;
+  font-family: 'Geologica', sans-serif;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.actualizacion {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* DIVIDER */
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #00A8AB;
+  margin: 20px 5% 50px;
+}
+
+/* GRID */
+.boletos-grid {
+  display: grid;
+margin: 0 10% 0 10%  ;
+  gap: 60px;
+}
+
+/* IZQUIERDA (MÓVIL) */
+.col-izq {
+  font-size: 14px;
+}
+
+.col-izq h2 {
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.col-izq p {
+  line-height: 1.6;
+}
+
+/* DERECHA (DESKTOP) */
+.col-der h2 {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.col-der p {
+  line-height: 1.6;
+}
+
+/* FORMULARIO */
+.formulario {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.formulario label {
+  font-size: 13px;
+  display: block;
+  margin-top: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario button {
+  margin-top: 20px;
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* CONTACTO ICONOS */
+.info-contacto {
+  margin-top: 40px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.material-symbols-outlined {
+  color: #00A8AB;
+  margin-right: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .boletos h1 {
+    font-size: 30px;
+  }
+
+  .boletos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="boletos">
+
+<h1>CÓMO ADQUIRIR TUS BOLETOS</h1>
+<p class="actualizacion">Última actualización: 16 de enero del 2025</p>
+<hr class="divider">
+
+<div class="boletos-grid">
+
+  <!-- COLUMNA IZQUIERDA (MÓVIL) -->
+  <div class="col-izq">
+
+    <h2>1. ¿Dónde adquirir boletos?</h2>
+    <p>
+      En línea a través de:<br>
+      <strong>teatroinbal.sistemadeboletos.com</strong><br><br>
+      O en taquillas del Centro Cultural del Bosque:
+      Lunes a viernes de 12 a 15 h y de 17 a 20 h.
+      Sábados de 11 a 15 h y de 17 a 19 h.
+      Domingos de 11 a 14 h y de 16 a 18 h.
+    </p>
+
+    <h2>2. ¿Los boletos tienen costo?</h2>
+    <p>Dependiendo de la obra, los precios pueden variar.</p>
+
+    <h2>3. ¿Boletos el mismo día?</h2>
+    <p>Sí, únicamente en taquilla.</p>
+
+    <h2>¿No encontraste tu pregunta?</h2>
+
+ <h2>4. ¿Aceptan pagos con tarjeta o efectivo?</h2>
+    <p>Se acepta cualquier método de pago.</p>
+
+    
+      <form class="formulario">
+      <label>Asunto</label>
+      <input type="text">
+
+      <label>Email</label>
+      <input type="email">
+
+      <label>Mensaje</label>
+      <textarea rows="4"></textarea>
+
+      <button>Submit</button>
+    </form>
+
+    <div class="info-item">
+        <span class="material-symbols-outlined">call</span>
+        <p>55-1234-5678<br>(Lunes a viernes, 10:00 a 18:00 h)</p>
+      </div>
+  </div>
+  <div class="info-contacto">
+      <div class="info-item">
+        <span class="material-symbols-outlined">mail</span>
+        <p>contacto@teatroejemplo.com</p>
+      </div>
+    </div>
+
+  <!-- COLUMNA DERECHA (DESKTOP) -->
+
+
+</div>
+</section>
+
+</body>
+</html>
