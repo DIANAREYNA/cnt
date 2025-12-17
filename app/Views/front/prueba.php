@@ -1,0 +1,117 @@
+<section class="portada">
+  <img src="<?=base_url('img/Maskgroup.jpg');?>" alt="Más Vale Morir">
+</section>
+
+<section class="pleca">
+  <div class="pleca-contenedor">
+
+    <!-- Columna izquierda -->
+    <p class="pleca-item">
+      <span class="pleca-autor">Autoría <br> <strong>Esquilo</strong></span>
+    </p>
+
+    <!-- Columna derecha -->
+    <p class="pleca-item">
+      Adaptación <br><strong>Amaranta Osorio y Jorge Volpi</strong>
+    </p>
+
+    <p class="pleca-item">
+      Dirección <br><strong> Richard Viqueira</strong>
+    </p>
+
+    
+  </div>
+</section>
+
+<section class="sinopsis">
+    <h2>RESEÑA</h2>
+
+    <p class="p-sinopsis">Capítulo II del Proyecto Espiral: ¿quién puede ser juez? Parte del programa Habitando a los griegos.</p>
+
+    <p class="p-sinopsis">Clitemnestra aguarda el regreso de Agamenón, su marido, quien ha sacrificado a su hija Ifigenia para ganar una batalla. Él llega acompañado por Casandra, a quien ha convertido en su amante. El crimen de Agamenón no puede quedar impune y Clitemnestra decide hacer justicia con sus propias manos, en un país en el que parece imposible escapar a una espiral de muerte.</p>
+
+    <div class="botonentrada"> 
+        <a href="IniciaSesion.html" class="btn">Adquirir entrada</a>
+    </div>
+
+
+    <div class="icon-row">
+        <div><i class="fa-solid fa-user"></i> +15</div>
+        <div><i class="fa-solid fa-clock"></i> 140 min</div>
+        <div><i class="fa-solid fa-calendar"></i> Del 30 de enero al 2 de marzo</div>
+    </div>
+
+
+    <div class="icon-row">
+        <div>
+            <a href="https://maps.app.goo.gl/8T3WPjgMaWHn2Lyt5" target="_blank"><i class="fa-solid fa-location-dot"></i> Teatro El Galeón, Abraham Oceransky</a>
+        </div>
+        <div>
+            <a href="https://maps.app.goo.gl/8T3WPjgMaWHn2Lyt5"  style="color:#E83F8B; text-decoration: underline;" target="_blank"><i class="fa-solid fa-file-pdf"></i> Programa de mano (PDF)</a>
+        </div>
+    </div>
+    
+    <div class="icon-row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.731602651327!2d-99.19770878753712!3d19.423999281777846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201fb8eeca345%3A0x6a876b197953e1a5!2sTeatro%20El%20Gale%C3%B3n!5e0!3m2!1sen!2smx!4v1763586289433!5m2!1sen!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  
+</section>
+
+<!-- SECCIÓN OSCURA -->
+<section class="seccion-oscura">
+
+    <!-- PRESENTAN -->
+    <div class="acordeon">
+        <button class="acordeon-btn">
+            <strong>ELENCO ESTABLE <i class="fa-solid fa-chevron-down"></i></strong>
+        </button>
+
+        <div class="acordeon-contenido">
+            <div class="grid-presentan">
+                <div><strong>Miguel Ángel López</strong><br>Hija de Agamenón</div>
+                <div><strong>Muriel Ricard</strong><br>Agamenón</div>
+                <div><strong>José Carlos Rodríguez</strong><br>Actriz A</div>
+                <div><strong>Alberto Santiago</strong><br>Actor</div>
+                <div><strong>Mario Vera</strong><br>Actor</div>
+                <div><strong>Medín Villatoro</strong><br>Actor</div>
+                <div><strong>Zabdi Blanco</strong><br>Actor</div>
+                <div><strong>Estefanía Estrada/Mariana Villaseñor</strong><br>Actor</div>
+                <div><strong>tzel Riqué</strong><br>Actor</div>
+                <div><strong>Ana Cristina Ross</strong><br>Actor</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EQUIPO CREATIVO & TÉCNICO -->
+    <div class="acordeon">
+        <strong>
+            <button class="acordeon-btn">
+                EQUIPO CREATIVO & TÉCNICO <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </strong>
+
+        <div class="acordeon-contenido">
+            <div class="grid-crew">
+                <div class="col-left">
+                    *Beneficiarios del Programa de Residencias Artísticas en Grupos Estables del INBAL (PRAGEI)<br>
+                </div>
+
+                <div class="col-right">
+                    Asistente de dirección: Rodrigo Alonso<br><br>
+                    Producción: Daniela Parra<br><br>
+                    Difusión: IQ Incunabry Acosta & Co.
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- HOLA -->
+
+
+</section>
+ <!-- ZONA DE LOGOS -->
+<div class="logos">
+    <img src="<?=base_url('img/logotipo_pragei.png');?>">
+    <img src="<?=base_url('img/logo_sistemadeapoyo.png');?>">
+    <img src="<?=base_url('img/logo_black.svg');?>">
+</div>

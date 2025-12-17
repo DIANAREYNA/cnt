@@ -9,11 +9,11 @@
     <div class="footer-left">
       <h3 class="footer-title">COMPAÑÍA NACIONAL DE TEATRO</h3>
       <br>
-      <p>Francisco Sosa #159</p>
-      <p>entre Melchor Ocampo y Encantada</p>
-      <p>04100, Coyoacán, CDMX.</p>
-      <p>Contacto: 55 8647 5620 / ext. 5600 cnt@inba.gob.mx</p>
-<br>
+      <p>Francisco Sosa #159<br>
+      entre Melchor Ocampo y Encantada<br>
+      04100, Coyoacán, CDMX.<br>
+      Contacto: 55 8647 5620 / ext. 5600 cnt@inba.gob.mx</p>
+      <br>
       <div class="footer-social">
         <li class="social">
             <a href="https://www.facebook.com/cnteatro/" target="_blank"><img src="img/redes_FACE.png" alt="Facebook"></a>

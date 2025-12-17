@@ -5,10 +5,8 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?=base_url('css/estilo.css');?>">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" class="pestaña" href="<?=base_url('img/logo_cnt_webpage.svg');?>" type="logo CNT">
   <title>Compañía Nacional de Teatro</title>
 
@@ -57,7 +55,7 @@
           <span class="material-symbols-outlined">stat_minus_1</span>
         </a>
         <ul class="submenu">
-          <li><a href="temporada.html">Temporada</a></li>
+          <li><a href="<?=base_url('temporada');?>">Temporada</a></li>
           <li><a href="#">Programación Completa</a></li>
           <li><a href="#">Cómo adquirir boleto</a></li>
           <li><a href="#">Repertorio</a></li>
@@ -70,7 +68,7 @@
         </a>
         <ul class="submenu">
           <li><a href="#">Historia</a></li>
-          <li><a href="#">Elenco Estable</a></li>
+          <li><a href="<?=base_url('elencoestable');?>">Elenco Estable</a></li>
           <li><a href="#">Directorio</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>

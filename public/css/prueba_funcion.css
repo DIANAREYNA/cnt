@@ -1,0 +1,301 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+/* -----------------------------------------
+   VARIABLES
+----------------------------------------- */
+:root {
+  --cyan: #00A8AB;
+  --dark: #2C2C2C;
+  --white: #fff;
+}
+
+/* -----------------------------------------
+   PORTADA
+----------------------------------------- */
+.portada img {
+  width: cover;
+  height: 545px;
+  object-fit: cover;
+  align-items: center;
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* -----------------------------------------
+   PLECA 3 COLUMNAS
+----------------------------------------- */
+.pleca {
+  background-color: #2C2C2C;
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 30px;
+  display: flex;
+  justify-content: left;
+  color: white;
+}
+
+.p-sinopsis{
+  text-align: center;
+}
+.pleca-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 40px;
+  align-items: center;
+  white-space: nowrap;      /* Esto obliga a que cada frase quede en una sola línea */
+}
+
+
+.pleca-autor {
+  color: #00A8AB;
+}
+.pleca-item strong {
+  font-weight: 700;
+}
+
+.mini-title {
+  font-size: 16px;
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+.pleca h3 {
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+/* -----------------------------------------
+   SINOPSIS
+----------------------------------------- */
+.sinopsis {
+
+  padding: 30px 30px;
+  
+}
+
+.sinopsis h2 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sinopsis p {
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.btn-load {
+  background: var(--dark);
+  color: var(--dark);
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* ICON ROWS */
+.icon-row {
+  padding: 15px 0;
+  border-top: 3px solid #000000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.icon-row a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn-entradas  {
+  background: #2C2C2C;
+  
+  padding: 10px 15px;
+  margin-left: auto;   /* 🔥 esto lo manda a la derecha */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-entradas i{
+color:#fff;
+}
+
+
+/* -----------------------------------------
+   SECCIÓN OSCURA
+----------------------------------------- */
+.seccion-oscura {
+  background: var(--dark);
+  color: var(--white);
+  padding: 10px 20px;
+}
+
+/* -----------------------------------------
+   ACORDEÓN (DEPURADO)
+----------------------------------------- */
+.acordeon {
+  width: 100%;
+  margin: 1.2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #ffffff;
+}
+
+.acordeon-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 24px;
+  text-align: left;
+  padding: 5px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acordeon-btn i {
+  transition: transform 0.3s ease;
+}
+
+.acordeon-contenido {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+  margin-top: 0.5rem;
+}
+
+/* -----------------------------------------
+   GRIDS (PRESENTAN & CREW)
+----------------------------------------- */
+.grid-presentan {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  font-size: 22px;
+}
+
+.grid-crew {
+  display: grid;
+  gap: 25px;
+}
+
+.col-left,
+.col-right {
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+/* -----------------------------------------
+   LOGOS
+----------------------------------------- */
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.logos img {
+  width: 200px;
+}
+
+/* -----------------------------------------
+   DESKTOP
+----------------------------------------- */
+@media (min-width: 768px) {
+  
+  .grid-presentan {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-crew {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .col-left {
+    text-align: right;
+    padding-right: 40px;
+  }
+
+  .col-right {
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  .pleca-item {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+}
+
+/* -----------------------------------------
+   MOBILE
+----------------------------------------- */
+@media (max-width: 768px) {
+
+  .pleca {
+    padding: 12px 0;
+  }
+
+  .pleca-contenedor {
+   
+    gap: 8px;
+  }
+
+  .pleca-item {
+    margin: 20px;
+    font-size: 20px;
+  
+    white-space: normal;
+    text-transform: uppercase;
+  }
+}
+.btn-wrapper {
+width: 100%;
+padding: 20px;
+display: inline-flex;
+justify-content: center; /* Móvil: botón centrado */
+}
+
+.btn{
+background-color: #00A8AB;
+color: white !important;
+padding: 12px 60px;
+margin: 12px 0;
+border-radius: 6px;
+text-decoration: none;
+align-items: center;
+display: inline-flex;  
+justify-content: center;
+text-align: center;
+font-size: 20px;
+border: none;
+cursor: pointer;
+}
+
+.botonentrada{
+display: flex;
+justify-content: center;
+}
+
+@media(min-width: 768px){
+.btn-wrapper {
+justify-content: flex-end;
+padding-right: 40px;
+}
+}

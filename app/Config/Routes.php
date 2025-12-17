@@ -7,3 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 //$routes->get('/', 'Home::index');
 $routes->get('/', 'Inicio::index');
+$routes->get('/temporada', 'Inicio::temporada');
+$routes->get('/prueba', 'Inicio::prueba');
+$routes->get('/elencoestable', 'Inicio::elenco');
