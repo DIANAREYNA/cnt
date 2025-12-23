@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
+ <link rel="icon" class="pestaña"  width="50px" href="img/logo_cnt_webpage.svg" type="logo CNT">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+ <title>Compañía Nacional de Teatro</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Raleway:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-image: url('img/textura-fondo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* CONTENEDOR */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* TÍTULO */
+.container h1 {
+  text-align: center;
+  color: #000;
+  font-family: 'Geologica', sans-serif;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.actualizacion {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* DIVIDER */
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #000;
+  margin: 20px 10% 30px;
+}
+
+/* GRID */
+.container-grid {
+  display: grid;
+margin: 0 10% 0 10%  ;
+  gap: 60px;
+}
+
+/* IZQUIERDA (MÓVIL) */
+.col-izq {
+  font-size: 14px;
+}
+
+.col-izq h2 {
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.col-izq p {
+  line-height: 1.6;
+}
+
+/* DERECHA (DESKTOP) */
+.col-der h2 {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.col-der p {
+  line-height: 1.6;
+}
+
+/* FORMULARIO */
+.formulario {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.formulario label {
+  font-size: 13px;
+  display: block;
+  margin-top: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario button {
+  margin-top: 20px;
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* CONTACTO ICONOS */
+.info-contacto {
+  margin-top: 40px;
+  
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.material-symbols-outlined {
+  color: #000;
+  margin-right: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .conteiner-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+  /* ACORDEÓN */
+    .acordeon {
+      border-top: 2px solid #000;
+    }
+
+    .acordeon-btn {
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      padding: 16px 16px 16px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .acordeon-btn i {
+      transition: transform 0.3s ease;
+      font-size: 24px;
+      
+    }
+
+    .acordeon-contenido {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+
+    .acordeon-contenido p {
+      padding-bottom: 16px;
+      text-align: left;
+    }
+
+    p{
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+
+
+<main class="container">
+
+  <h1>OBRAS DE REPERTORIO</h1>
+
+  <div class="container-grid">
+
+    <!-- TEXTO -->
+    <div>
+     
+
+      <!-- ACORDEÓN -->
+      <div class="acordeon">
+        <button class="acordeon-btn">
+          2009
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="acordeon-contenido">
+          <p>
+          <b>Pascua de August Strindberg</b> dirección Héctor Mendoza
+          </p>
+Ni el sol ni la muerte pueden mirarse de frente de Wadji Mouawad, dirección Rolf y Heidi Abderhalden
+<p>
+Edip en Colofón de Flavio González Mello, dirección Mario Espinosa
+
+Ser es ser visto Paráfrasis escénica inspirada en textos de Botho Strauss, J. W. Goethe, Wilhelm Müller y Friedrich Rückert por Luis de Tavira y Stefanie Weiss, dirección Luis de Tavira
+
+Galileo, un foso de Compañía Nacional de Teatro / Daira Kudakan, dirección Takuya Muramatsu
+Egmont de Johann Wolfgang Goethe dirección Mauricio García Lozano
+
+          </p>
+        </div>
+      </div>
+
+      <div class="acordeon">
+        <button class="acordeon-btn">
+          2010
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="acordeon-contenido">
+          <p>
+            Al trazar una genealogía de la Compañía Nacional de Teatro, podríamos remontarnos a nuestros primeros años como nación independiente con la Constitución de 1824. En su artículo 50,  se mencionaba la promoción de las artes a la educación brindada por el Estado en el proyecto educativo nacional, fue bajo este marco jurídico que en 1831 el presidente Anastasio Bustamante encomendó al empresario Manuel de la Barrera conformar una compañía teatral “digna de la ilustración de esta capital” con actores extranjeros. Dicha compañía se desintegró en 1834 a causa de las dificultades políticas y económicas de la época. 
+Durante el gobierno de Santa Anna se inauguraron tres grandes teatros a lo largo del país: el Teatro de Nuevo México, el Teatro Iturbide y el Gran Teatro Nacional, además se promulgaron dos reglamentos en materia de teatros, uno en 1836 y otro en 1853, que colaboraron en la dignificación de la profesión escénica.
+        </p>
+      
+        </div>
+      </div>
+
+    </div>
+
+    <!-- IMAGEN -->
+  
+
+  </div>
+
+</main>
+
+<script>
+  document.querySelectorAll('.acordeon-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const contenido = btn.nextElementSibling;
+
+      if (contenido.style.maxHeight) {
+        contenido.style.maxHeight = null;
+        btn.querySelector("i").style.transform = "rotate(0deg)";
+      } else {
+        contenido.style.maxHeight = contenido.scrollHeight + "px";
+        btn.querySelector("i").style.transform = "rotate(180deg)";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

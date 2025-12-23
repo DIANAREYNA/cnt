@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quiénes somos | Compañía Nacional de Teatro</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="quienes-somos.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background: #2B2B2B;
+  color: #fff;
+}
+
+/* CONTENEDOR */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Geologica', sans-serif;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #fff;
+  margin: 20px 10% 40px;
+}
+
+/* GRID */
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  margin: 0 10%;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ACORDEÓN */
+.acordeon {
+  border-top: 2px solid #fff;
+  margin-top: 25px;
+}
+
+.acordeon-btn {
+  background: none;
+  border: none;
+  width: 100%;
+  font-family: 'Geologica', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.acordeon-btn i {
+  transition: transform 0.3s ease;
+}
+
+.acordeon-contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.acordeon-contenido p {
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+/* DOBLE COLUMNA */
+.grid-dos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .container-grid {
+    grid-template-columns:  1fr;
+    align-items: start;
+  }
+
+  .grid-dos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .container-grid {
+    margin: 0;
+  }
+}
+
+</style>
+<body>
+
+<main class="container oscuro">
+
+  <h1>QUIÉNES SOMOS</h1>
+  <hr class="divider">
+
+  <div class="container-grid">
+
+    <!-- TEXTO INTRO -->
+    <div>
+      <p>
+        La Compañía Nacional de Teatro es un espacio dedicado a la excelencia escénica en México.
+        Con un equipo conformado por un elenco estable de actrices y actores de gran trayectoria,
+        un sólido equipo técnico y de producción, así como especialistas en cada área,
+        trabajamos en la producción y difusión de espectáculos teatrales.
+      </p>
+
+      <!-- ACORDEÓN 1 -->
+      <div class="acordeon">
+        <button class="acordeon-btn">
+          COMPAÑÍA NACIONAL DE TEATRO
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="acordeon-contenido grid-dos">
+          <div>
+            <p><strong>Aurora Cano</strong><br>Dirección artística</p>
+            <p><strong>Raúl Munguía</strong><br>Subdirección de producción</p>
+            <p><strong>Mónica Juárez</strong><br>Subdirección de planeación</p>
+            <p><strong>Alejandro Carrasco Bergara</strong><br>Dirección técnica</p>
+          </div>
+
+          <div>
+            <p><strong>Fernando Santiago</strong><br>Producción residente</p>
+            <p><strong>Jessy Mejía</strong><br>Producción</p>
+            <p><strong>Rebeca Gutiérrez</strong><br>Asistentes administrativos</p>
+            <p><strong>Corina Rojas Cadillo</strong><br>Prensa</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACORDEÓN 2 -->
+      <div class="acordeon">
+        <button class="acordeon-btn">
+          ELENCO ESTABLE
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="acordeon-contenido grid-dos">
+          <div>
+            <p>Actrices y actores de número</p>
+            <p>Categoría A · Experiencia superior a 10 años</p>
+            <p>Categoría B · Experiencia superior a 5 años</p>
+          </div>
+
+          <div>
+            <p>Categoría C · Actores jóvenes</p>
+            <p>Elenco artístico permanente</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACORDEÓN 3 -->
+      <div class="acordeon">
+        <button class="acordeon-btn">
+          COORDINACIONES DE TALLERES ESCENOTÉCNICOS
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="acordeon-contenido grid-dos">
+          <div>
+            <p><strong>Víctor Said Esparza</strong><br>Escenografía</p>
+            <p><strong>Juan Carlos Ledezma</strong><br>Iluminación, audio y multimedia</p>
+          </div>
+
+          <div>
+            <p><strong>Gregorio Portilla Silvestre</strong><br>Ingeniería escénica</p>
+            <p><strong>Luis Ángel Gómez</strong><br>Transporte</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACORDEÓN 4 (UNA COLUMNA) -->
+      <div class="acordeon">
+        <button class="acordeon-btn">
+          EQUIPO TÉCNICO CNT
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="acordeon-contenido">
+          <p>
+            Christian Núñez, Luis E. Palacios, Mauricio Martagón y Perla Escudero – Escenografía<br><br>
+            Gerardo Sánchez y Diana Echaury – Iluminación, audio y multimedia<br><br>
+            Berenice Esquivel – Vestuario
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COLUMNA DERECHA (DESKTOP) -->
+    <div></div>
+
+  </div>
+
+</main>
+
+<!-- JS ACORDEÓN -->
+<script>
+  document.querySelectorAll('.acordeon-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const contenido = btn.nextElementSibling;
+
+      if (contenido.style.maxHeight) {
+        contenido.style.maxHeight = null;
+        btn.querySelector("i").style.transform = "rotate(0deg)";
+      } else {
+        contenido.style.maxHeight = contenido.scrollHeight + "px";
+        btn.querySelector("i").style.transform = "rotate(180deg)";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
